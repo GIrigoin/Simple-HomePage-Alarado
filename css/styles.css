@@ -78,6 +78,9 @@ li::marker {
     color: var(--color);
   }
 }
+.mobile-menu {
+  display: none;
+}
 .theme-button {
   width: 52px;
   height: 24px;
@@ -156,11 +159,33 @@ li::marker {
   color: var(--secondary-color);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  li {
+    margin-right: 24px;
+  }
 }
 .hero-image {
   width: 568px;
 }
-/* @media screen and (min-width: 720px) {
 
-} */
+@media screen and (720px < width < 1280px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  .content-container {
+    width: 800px;
+  }
+}
+
+@media screen and (width <= 720px) {
+  .web-menu {
+    display: none;
+  }
+  .theme-mbile-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
