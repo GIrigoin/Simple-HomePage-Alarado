@@ -13,32 +13,46 @@
     />
   </head>
   <body>
-    <header>
+    <header class="web">
       <div>
         <img class="logo" src="./images/alarado-icon-homepage.svg" alt="" />
       </div>
+
       <div class="web-menu">
         <a class="nav-link" href="">About us</a>
         <a class="nav-link" href="">Product</a>
         <a class="nav-link" href="">Resource</a>
         <a class="nav-link" href="">Contact</a>
       </div>
-      <div class="theme-mobile-menu">
-        <div class="mobile-menu">
-          <a class="nav-link" href="">About us</a>
-          <a class="nav-link" href="">Product</a>
-          <a class="nav-link" href="">Resource</a>
-          <a class="nav-link" href="">Contact</a>
-        </div>
 
-        <button class="theme-button" onclick="myFunction()">
+      <button class="theme-button" onclick="changeTheme()">
+        <img class="dark" src="./images/Moon_fill_light.svg" alt="" />
+        <img class="light" src="./images/Sun_fill.svg" alt="" />
+      </button>
+    </header>
+
+    <header class="mobile">
+      <div>
+        <img class="logo" src="./images/alarado-icon-homepage.svg" alt="" />
+      </div>
+
+      <button class="menu" onclick="openMobileMenu()">
+        <img class="img-menu" src="./images/menu-svgrepo-com.svg" alt="" />
+      </button>
+
+      <div class="mobile-menu">
+        <button class="close" onclick="closeMobileMenu()">
+          <img class="img-close" src="./images/close-svgrepo-com.svg" alt="" />
+        </button>
+        <a class="mob-link" href="">About us</a>
+        <a class="mob-link" href="">Product</a>
+        <a class="mob-link" href="">Resource</a>
+        <a class="mob-link" href="">Contact</a>
+        <button class="theme-button" onclick="changeTheme()">
           <img class="dark" src="./images/Moon_fill_light.svg" alt="" />
           <img class="light" src="./images/Sun_fill.svg" alt="" />
         </button>
       </div>
-      <button class="menu">
-        <img class="img-menu" src="./images/menu-svgrepo-com.svg" alt="" />
-      </button>
     </header>
 
     <main>
